@@ -6,7 +6,7 @@ layout: base.njk
   <div class="wrap">
     <div class="inner">
       <div class="post-header">
-        <a href="/blog" class="post-back">← Terug naar blog</a>
+        <a href="{{ '/blog/' | url }}" class="post-back">← Terug naar blog</a>
         <div class="post-meta-line">
           <span class="blog-date">{{ date | postDate }}</span>
           {% if category %}<span class="blog-tag">{{ category }}</span>{% endif %}

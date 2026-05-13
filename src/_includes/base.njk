@@ -5,37 +5,37 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{{ title or "Adca - Juridische regie, zonder ruis" }}</title>
 {% if description %}<meta name="description" content="{{ description }}">{% endif %}
-<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="{{ '/css/style.css' | url }}">
 </head>
 <body>
 
 <!-- NAV -->
 <nav id="nav">
-  <a href="/" class="nav-logo"><img src="/images/Kleur met vaandel.svg" alt="Adca logo"></a>
+  <a href="{{ '/' | url }}" class="nav-logo"><img src="{{ '/images/Kleur met vaandel.svg' | url }}" alt="Adca logo"></a>
   <ul class="nav-links" id="navLinks2">
-    <li><a href="/#hoe">Hoe het werkt</a></li>
-    <li><a href="/#prijzen">Prijzen</a></li>
-    <li><a href="/#blog">Inzichten</a></li>
-    <li><a href="/#over">Over Adca</a></li>
+    <li><a href="{{ '/' | url }}#hoe">Hoe het werkt</a></li>
+    <li><a href="{{ '/' | url }}#prijzen">Prijzen</a></li>
+    <li><a href="{{ '/' | url }}#blog">Inzichten</a></li>
+    <li><a href="{{ '/' | url }}#over">Over Adca</a></li>
   </ul>
   <div class="nav-right">
-    <a href="/#contact" class="nav-cta">Plan een demo</a>
+    <a href="{{ '/' | url }}#contact" class="nav-cta">Plan een demo</a>
     <div class="hamburger">
       <button class="hamburger-btn" onclick="toggleMenu2()" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
       <div class="hamburger-menu" id="hamburgerMenu2">
         <div class="menu-label">Menu</div>
-        <a href="/#hoe">Hoe het werkt</a>
-        <a href="/#prijzen">Prijzen</a>
-        <a href="/#blog">Inzichten</a>
-        <a href="/#over">Over Adca</a>
+        <a href="{{ '/' | url }}#hoe">Hoe het werkt</a>
+        <a href="{{ '/' | url }}#prijzen">Prijzen</a>
+        <a href="{{ '/' | url }}#blog">Inzichten</a>
+        <a href="{{ '/' | url }}#over">Over Adca</a>
         <div class="menu-divider"></div>
         <div class="menu-label">Meer</div>
-        <a href="/software">Applicatie &amp; features</a>
-        <a href="/faq">Veelgestelde vragen</a>
-        <a href="/tutorials">Tutorials</a>
-        <a href="/blog">Blog</a>
+        <a href="{{ '/software/' | url }}">Applicatie &amp; features</a>
+        <a href="{{ '/faq/' | url }}">Veelgestelde vragen</a>
+        <a href="{{ '/tutorials/' | url }}">Tutorials</a>
+        <a href="{{ '/blog/' | url }}">Blog</a>
       </div>
     </div>
   </div>
@@ -51,8 +51,8 @@
     info@adcacontractbeheer.nl &bull; KvK 92061702 &bull; &copy; 2026 Adca
   </div>
   <div class="footer-links">
-    <a href="/privacy-policy">Privacy</a>
-    <a href="/algemene-voorwaarden">Algemene voorwaarden</a>
+    <a href="{{ '/privacy-policy/' | url }}">Privacy</a>
+    <a href="{{ '/algemene-voorwaarden/' | url }}">Algemene voorwaarden</a>
   </div>
 </footer>
 
