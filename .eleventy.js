@@ -13,6 +13,10 @@ module.exports = function (eleventyConfig) {
     });
   });
 
+  eleventyConfig.addFilter("otherPosts", (posts, currentUrl, limit) => {
+    return posts.filter(p => p.url !== currentUrl).slice(0, limit);
+  });
+
   return {
     dir: {
       input: "src",

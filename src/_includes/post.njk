@@ -20,3 +20,33 @@ layout: base.njk
     </div>
   </div>
 </div>
+
+{% set morePosts = collections.posts | reverse | otherPosts(page.url, 3) %}
+{% if morePosts.length %}
+<div class="section bg-light">
+  <div class="wrap">
+    <div class="inner">
+      <div class="blog-top" style="margin-bottom:2rem;">
+        <div>
+          <p class="label">Meer lezen</p>
+          <h2 class="h2">Andere <span class="accent">artikelen</span></h2>
+        </div>
+        <a href="{{ '/blog/' | url }}" class="blog-link">Alle artikelen</a>
+      </div>
+      <div class="blog-grid">
+        {% for post in morePosts %}
+        <a href="{{ post.url }}" class="blog-card">
+          <div class="blog-card-stripe"></div>
+          <div class="blog-card-body">
+            <div class="blog-date">{{ post.date | postDate }}</div>
+            <h3>{{ post.data.title }}</h3>
+            <p>{{ post.data.description }}</p>
+            {% if post.data.category %}<span class="blog-tag">{{ post.data.category }}</span>{% endif %}
+          </div>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
