@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(awk 'NR>=30 && NR<=55' \"/Users/isabel/Documents/Isabel prive/DNIB/Adca/Adca website/adca_index.html\")",
+      "Bash(awk 'NR>=7 && NR<=9' \"/Users/isabel/Documents/Isabel prive/DNIB/Adca/Adca website/adca_index.html\")",
+      "Bash(awk 'NR>=10 && NR<=28' \"/Users/isabel/Documents/Isabel prive/DNIB/Adca/Adca website/adca_index.html\")",
+      "Bash(npm run *)"
+    ]
+  }
+}

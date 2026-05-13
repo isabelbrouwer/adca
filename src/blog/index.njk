@@ -1,0 +1,32 @@
+---
+layout: base.njk
+title: "Blog - Adca Contractbeheer"
+description: "Artikelen over contractbeheer, juridische regie en legal tech voor bedrijfsjuristen."
+tags: []
+---
+
+<div class="section bg-white">
+  <div class="wrap">
+    <div class="inner">
+      <div class="blog-top" style="margin-bottom:3rem;">
+        <div>
+          <p class="label">Blog</p>
+          <h1 class="h2">Contractbeheer voor <span class="accent">juristen</span></h1>
+        </div>
+      </div>
+      <div class="blog-grid">
+        {% for post in collections.posts | reverse %}
+        <a href="{{ post.url }}" class="blog-card">
+          <div class="blog-card-stripe"></div>
+          <div class="blog-card-body">
+            <div class="blog-date">{{ post.date | postDate }}</div>
+            <h3>{{ post.data.title }}</h3>
+            <p>{{ post.data.description }}</p>
+            {% if post.data.category %}<span class="blog-tag">{{ post.data.category }}</span>{% endif %}
+          </div>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

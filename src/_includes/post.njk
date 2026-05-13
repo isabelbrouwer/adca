@@ -1,0 +1,22 @@
+---
+layout: base.njk
+---
+
+<div class="section bg-white post-page">
+  <div class="wrap">
+    <div class="inner">
+      <div class="post-header">
+        <a href="/blog" class="post-back">← Terug naar blog</a>
+        <div class="post-meta-line">
+          <span class="blog-date">{{ date | postDate }}</span>
+          {% if category %}<span class="blog-tag">{{ category }}</span>{% endif %}
+        </div>
+        <h1 class="h1 post-title">{{ title }}</h1>
+        {% if description %}<p class="post-description">{{ description }}</p>{% endif %}
+      </div>
+      <div class="post-body">
+        {{ content | safe }}
+      </div>
+    </div>
+  </div>
+</div>
