@@ -14,7 +14,6 @@ module.exports = function (eleventyConfig) {
   });
 
   return {
-    pathPrefix: "/adca/",
     dir: {
       input: "src",
       output: "_site",
