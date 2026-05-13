@@ -1,21 +1,9 @@
-# Decap CMS configuratie voor Adca Contractbeheer
-#
-# Stap 1: Maak een GitHub repository aan (bijv. isabel-github/adca-website)
-# Stap 2: Vervang GITHUB_GEBRUIKER/adca-website hieronder door de echte repo-naam
-# Stap 3: Maak een GitHub OAuth App aan op https://github.com/settings/developers
-#          - Homepage URL: https://jouwdomein.nl
-#          - Callback URL: https://jouwdomein.nl/
-#          Vul de Client ID in bij app_id hieronder
-#
-# Lokaal testen (voor Isabel): draai "npm run cms" in een apart terminal-venster
-# en ga dan naar http://localhost:8080/admin
-
 backend:
   name: github
-  repo: GITHUB_GEBRUIKER/adca-website   # TODO: aanpassen na aanmaken repo
+  repo: isabelbrouwer/adca
   branch: main
   auth_type: pkce
-  app_id: GITHUB_OAUTH_APP_CLIENT_ID    # TODO: aanpassen na aanmaken OAuth App
+  app_id: GITHUB_OAUTH_APP_CLIENT_ID    # TODO: vervangen door Client ID van GitHub OAuth App
 
 local_backend: true
 
