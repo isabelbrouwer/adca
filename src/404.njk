@@ -1,0 +1,71 @@
+---
+layout: base.njk
+title: "Pagina niet gevonden - Adca Contractbeheer"
+permalink: /404.html
+---
+
+<div class="not-found-page">
+  <div class="not-found-bg"></div>
+  <div class="wrap">
+    <div class="inner not-found-inner">
+      <p class="label label-center">Fout 404</p>
+      <div class="not-found-number">404</div>
+      <h1 class="h2" style="margin-top:1rem;">Pagina <span class="accent">niet gevonden</span></h1>
+      <p class="not-found-sub">De pagina die je zoekt bestaat niet (meer) of is verplaatst. Ga terug naar de homepage of bekijk onze veelgestelde vragen.</p>
+      <div class="not-found-ctas">
+        <a href="/" class="btn btn-red">Terug naar home</a>
+        <a href="/faq/" class="btn btn-ghost">Veelgestelde vragen</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.not-found-page {
+  position: relative;
+  min-height: calc(100vh - 64px);
+  padding-top: 64px;
+  display: flex;
+  align-items: center;
+}
+.not-found-bg {
+  position: absolute;
+  inset: 0;
+  background-color: var(--bg);
+  background-image: linear-gradient(rgba(0,90,150,0.06) 1px, transparent 1px);
+  background-size: 100% 32px;
+  pointer-events: none;
+}
+.not-found-inner {
+  text-align: center;
+  padding: var(--section-y) 0;
+  position: relative;
+}
+.not-found-number {
+  font-family: var(--serif);
+  font-weight: 900;
+  font-size: clamp(7rem, 18vw, 14rem);
+  line-height: 1;
+  color: var(--blue);
+  opacity: 0.12;
+  letter-spacing: -0.03em;
+  margin-bottom: -2rem;
+  pointer-events: none;
+  user-select: none;
+}
+.not-found-sub {
+  color: var(--ink-mid);
+  font-weight: 300;
+  line-height: 1.8;
+  font-size: 1rem;
+  max-width: 480px;
+  margin: 1.2rem auto 0;
+}
+.not-found-ctas {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2.5rem;
+}
+</style>
