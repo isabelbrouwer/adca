@@ -426,6 +426,7 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0,90,150,0.1); }
 .blog-card p { font-size: 0.83rem; color: var(--ink-mid); line-height: 1.6; font-weight: 300; }
 .blog-card h3 { overflow-wrap: break-word; }
 .post-meta-line .blog-tag { margin-top: 0; }
+.post-meta-line .blog-date { margin-bottom: 0; }
 .blog-tag {
   display: inline-block; margin-top: 1rem;
   font-size: 0.68rem; font-weight: 600; letter-spacing: 0.08em;
